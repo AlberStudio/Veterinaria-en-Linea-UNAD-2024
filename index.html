@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Veterinaria</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03076225e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <img src="images/logo pagina.png" alt="Logo">
+
+
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#Inicio" onmousemove="Sonido6.play()">Inicio</a></li>
+                    <li><a href="#Ofertas" onmousemove="Sonido6.play()">Ofertas</a></li>
+
+                    <li><a href="#lista-1" onmousemove="Sonido6.play()">Perros</a></li>
+                    <li><a href="#lista-2" onmousemove="Sonido6.play()">Gatos</a></li>
+                    <li><a href="#lista-3" onmousemove="Sonido6.play()">Aves</a></li>
+                    <li><a href="#testimonios" onmousemove="Sonido6.play()">Testimonios</a></li>
+                    <li><a href="#Contactos" onmousemove="Sonido6.play()">Contacto</a></li>
+                </ul>
+                <button class="button" id="form-open">Login</button>
+
+            </nav>
+            <section class="home">
+                <div class="form_container">
+                    <i class="uil uil-times form_close"></i>
+
+                    <div class="form login-form">
+                        <form action="#">
+                            <h2>Login</h2>
+
+                            <div class="input_box">
+                                <input type="email" placeholder="Ingresa tu Email" required>
+                                <i class="uil uil-envelope-alt email"></i>
+                            </div>
+
+                            <div class="input_box">
+                                <input type="password" placeholder="Ingresa tu contraseña" required>
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-eye-slash pw_hide"></i>
+
+                            </div>
+
+                            <div class="option_field">
+                                <span class="checkbox">
+                                    <input type="checkbox" id="check">
+                                    <label for="check">Recordarme</label>
+                                </span>
+                                <a href="#" class="forgot_pw">¿Olvidaste tu contraseña?</a>
+                            </div>
+
+                            <button class="button">Iniciar Sesión</button>
+                            <div class="login_signup">¿No tienes una cuenta? <a href="#" id="signup">Registrarse</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form signup_form">
+                        <form action="#">
+                            <h2>Registro</h2>
+                            <div class="input_box">
+                                <input type="email" placeholder="Ingresa tu Email" required>
+                                <i class="uil uil-envelope-alt email"></i>
+                            </div>
+
+                            <div class="input_box">
+                                <input type="password" placeholder="Ingresa tu contraseña" required>
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-eye-slash pw_hide"></i>
+                            </div>
+
+                            <div class="input_box">
+                                <input type="password" placeholder="Confirmar contraseña" required>
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-eye-slash pw_hide"></i>
+                            </div>
+
+                            <button class="button">Registrarse</button>
+                            <div class="login_signup">¿Tienes una cuenta? <a href="#" id="login">Login</a></div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </section>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="images/car.svg" alt="car">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3" onclick="Sonido3.play()">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container" id="Inicio">
+            <div class="header-txt">
+                <span>Bienvendidos a nuestra Tienda Veterinaria</span>
+                <h1>Tips del Dia</h1>
+                <p>
+                    En nuestra tienda veterinaria, queremos lo mejor para tu compañero de vida, ya sea un perro,
+                    gato u otra mascota. Hemos seleccionado las mejores ofertas en productos de calidad para el
+                    bienestar de tu mascota, ¡y todo a precios irresistibles!
+                </p>
+                <span class="hide" id="hideText">
+                    <p>
+
+                        Ofertas Destacadas:
+
+                        Alimentos Premium para Perros y Gatos: Encuentra las mejores marcas con descuentos increíbles.
+                        Nutrición balanceada para todas las etapas de su vida.
+                        Accesorios y Juguetes: Camas, correas, juguetes interactivos, y más. ¡Dale a tu mascota lo mejor
+                        sin romper tu presupuesto!
+                        Cuidado y Salud: Ofertas en antipulgas, desparasitantes, y vitaminas para mantener a tu mascota
+                        saludable y protegida.
+                        Productos de Higiene: Champús, cepillos y productos de limpieza con descuentos exclusivos para
+                        cuidar a tu amigo peludo.
+                        Aprovecha nuestras promociones por tiempo limitado y dale a tu mascota el cuidado que merece.
+                        ¡Cuida su bienestar mientras ahorras!
+                    </p>
+                </span>
+                <div class="butons">
+                    <a href="#" class="btn-1" id=btn_0 onclick="Sonido2.play()">Leer mas</a>
+                </div>
+            </div>
+            <div class="header-img">
+                <img src="images/bag.png" alt="">
+            </div>
+        </div>
+        </section>
+    </header>
+    <section class="oferts container" id="Ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="ofert-1 b1">
+            <div class="ofert_txt">
+                <span>Alimento Premium para Perros</span>
+                <h3>Dale a tu perro la nutrición que necesita con nuestro alimento balanceado de alta calidad.</h3>
+                <span class="hide1" id=hideOfert1>
+                    <h3>Formulado con proteínas de origen animal, vitaminas y minerales esenciales, este alimento ayuda
+                        a mantener su energía y vitalidad diaria. Ahora con un 20% de descuento, perfecto para cuidar su
+                        salud sin descuidar tu bolsillo.</h3>
+                </span>
+
+                <a href="#" id=btn_1 id=btn_0 onclick="Sonido2.play()">Leer Más</a>
+            </div>
+            <div class="ofert-img">
+                <img src="images/s1.png" alt="">
+            </div>
+        </div>
+
+        <div class="ofert-1 b2">
+            <div class="ofert_txt">
+                <span>Rascador para Gatos</span>
+                <h3>Mantén a tu gato entretenido y libre de estrés con este rascador multiusos. Con varias alturas y
+                    zonas de descanso</h3>
+                <span class="hide2" id="hideOfert2">
+                    <h3>
+                        es perfecto para mantener sus garras en buen estado mientras se divierte. Ideal para gatos de
+                        todas las edades. Precio especial con el 20% de descuento en nuestra sección de ofertas. </h3>
+                </span>
+                <a href="#" id="btn_2" id=btn_0 onclick="Sonido2.play()">Leer Más</a>
+            </div>
+            <div class="ofert-img">
+                <img src="images/s2.png" alt="">
+            </div>
+        </div>
+
+        <div class="ofert-1 b3">
+            <div class="ofert_txt">
+                <span>Jaula Espaciosa para Aves Pequeñas</span>
+                <h3>Proporciona un hogar cómodo y seguro para tus aves con esta jaula amplia y resistente. Incluye
+                    comederos, perchas y un diseño que facilita la limpieza</h3>
+                <span class="hide3" id="hideOfert3">
+                    <h3>
+                        Diseñada para aves pequeñas como periquitos y canarios, incluye perchas y comederos. Hecha de
+                        materiales resistentes, es fácil de limpiar y mantener. ¡Aprovecha el 15% de descuento y mejora
+                        el hogar de tu ave hoy mismo!
+                    </h3>
+                </span>
+                <a href="#" id="btn_3" id=btn_0 onclick="Sonido2.play()">Leer Más</a>
+            </div>
+            <div class="ofert-img">
+                <img src="images/s3.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <main class="products container">
+        <h2>Seccion Perros</h2>
+        <div class="box-container" id="lista-1">
+            <div class="box">
+                <img src="images/Perros/perro1.png" alt="">
+                <div class="product-txt">
+                    <h3>Pedigree - Adulto</h3>
+                    <p>Alimento Para Perro Adulto es un concentrado con fibras naturales para una digestión óptima y
+                        heces firmes fáciles de recoger. </p>
+                    <p class="Precio">$7500</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="1" onclick="sound.play()">Agregar al Carrito</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro2.png" alt="">
+                <div class="product-txt">
+                    <h3>Pedigree Biscrok</h3>
+                    <p>Pedigree Biscrok son deliciosas, crocantes y nutritivas galletas, ideales para recompensar a tu
+                        perro</p>
+                    <p class="Precio">$10500</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="2" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro3.png" alt="">
+                <div class="product-txt">
+                    <h3>Pedigree Pupy </h3>
+                    <p>Pedigree pupy es una comida completa y saludable, con nutrientes esenciales para el crecimiento
+                        saludable de su perro</p>
+                    <p class="Precio">$35000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="3" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro4.png" alt="">
+                <div class="product-txt">
+                    <h3>Pedigree Senior</h3>
+                    <p>Pedigree Senior, alimento para perros con ingredientes de calidad para una nutrición completa que
+                        tu perro agradecerá.</p>
+                    <p class="Precio">$45000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="4" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro5.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Dog Chow Alta Proteína</h3>
+                    <p>Alimento completo y balanceado para perros adultos de todos los tamaños, formula de alta proteína
+                        a base de carnes, pollo y huevo.</p>
+                    <p class="Precio">$18000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="5" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro6.png" alt="">
+                <div class="product-txt">
+                    <h3>Chunky Delidog</h3>
+                    <p>Comida humeda para perros de trozos de pavo
+                        Alimento para todas las razas, contribuye a una digestion avanzada </p>
+                    <p class="Precio">$15000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="6" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro7.png" alt="">
+                <div class="product-txt">
+                    <h3>Advocate </h3>
+                    <p>Advocate Perros es el único producto antiparasitario externo e interno en pipetas, registrado
+                        para el tratamiento de la demodicosis en el perro.</p>
+                    <p class="Precio">$81000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="7" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro8.png" alt="">
+                <div class="product-txt">
+                    <h3>Agility Gold </h3>
+                    <p>Agility Gold; concentrado ideal para suministrar en todas las etapas de la vida de los
+                        perros, para proporcionarles una alimentación adecuada.</p>
+                    <p class="Precio">$95000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="8" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro9.png" alt="">
+                <div class="product-txt">
+                    <h3>Juego interactivo</h3>
+                    <p>Es una opción que cuenta con multiactividades para que el perro interactúe y se entretenga.
+                        Incluye varioss niveles de juego en función de la dificultad que se desee.</p>
+                    <p class="Precio">$55000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="9" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro10.png" alt="">
+                <div class="product-txt">
+                    <h3>Divertida Pelot color Azul</h3>
+                    <p>Pelota con diseño bonito ideal para nuestras queridas mascotas, perfecto para poder entretenerlos
+                        por un tiempo. El juego es necesario para mantener a su perro
+                        activo y feliz evitando sentirse solo.</p>
+                    <p class="Precio">$85000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="10" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro11.png" alt="">
+                <div class="product-txt">
+                    <h3>Bañera Jasonwell</h3>
+                    <p>Piscina para perros, para baño de mascotas, piscina de chapoteo para
+                        cachorros, para perros y gatos chicos, medianos y grandes y niños.</p>
+                    <p class="Precio">$93000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="11" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Perros/perro12.png" alt="">
+                <div class="product-txt">
+                    <h3>Petstages Hueso de orka</h3>
+                    <p>Petstages Hueso de orka es la forma perfecta para masticar, transportar y perseguir,La forma
+                        plana ayuda a ejercitar los músculos de la mandíbula.</p>
+                    <p class="Precio">$10000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="12" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-2" data id="load-more" onclick="sound.play()">Cargas Más
+        </div>
+
+        <h2>Seccion Gatos</h2>
+        <div class="box-container2" id="lista-2">
+            <div class="box">
+                <img src="images/gatos/gatos1.png" alt="">
+                <div class="product-txt">
+                    <h3>Pate Whiskas Lata</h3>
+                    <p>El Paté Whiskas en lata es un alimento húmedo y completo para gatos, rico en proteínas y
+                        nutrientes esenciales.
+                    </p>
+                    <p class="Precio">$35000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="1" onclick="sound.play()">Agregar al Carrito</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos2.png" alt="">
+                <div class="product-txt">
+                    <h3>Perfect Fit</h3>
+                    <p>
+                        Perfect Fit es un alimento equilibrado para gatos, rico en proteínas y nutrientes que apoyan su
+                        salud y bienestar.</p>
+                    <p class="Precio">$15000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="2" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos3.png" alt="">
+                <div class="product-txt">
+                    <h3>Brit Premium </h3>
+                    <p>Brit Premium es un alimento para gatos de alta calidad, rico en proteínas y nutrientes esenciales
+                        para fortalecer su salud. </p>
+                    <p class="Precio">$55000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="3" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos4.png" alt="">
+                <div class="product-txt">
+                    <h3>Encore</h3>
+                    <p>Encore es un alimento natural para gatos, elaborado con ingredientes de alta calidad y sin
+                        aditivos artificiales.</p>
+                    <p class="Precio">$45000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="4" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos5.png" alt="">
+                <div class="product-txt">
+                    <h3>Strong Ball</h3>
+                    <p>Strong Ball es un juguete resistente para gatos, diseñado para soportar juegos intensos y
+                        masticaciones frecuentes.</p>
+                    <p class="Precio">$23000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="5" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos6.png" alt="">
+                <div class="product-txt">
+                    <h3>Colorful Pet Toy</h3>
+                    <p>Colorful Pet Toys es un juguete vibrante y estimulante para gatos que combina colores
+                        brillantes y texturas atractivas ideal para tu felino</p>
+                    <p class="Precio">$15000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="6" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos7.png" alt="">
+                <div class="product-txt">
+                    <h3>El Juguete Mascotas</h3>
+                    <p>El Juguete limpia Dientes es un juguete interactivo para gatos que combina diversión y
+                        cuidado dental.
+                    </p>
+                    <p class="Precio">$81000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="7" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos8.png" alt="">
+                <div class="product-txt">
+                    <h3>TINWEIUS - Árbol multifuncional </h3>
+                    <p>Árbol Multifuncional para gatos es un elegante y versátil centro de juego que ofrece varias
+                        plataformas, rascadores y escondites.</p>
+                    <p class="Precio">$95000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="8" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos9.png" alt="">
+                <div class="product-txt">
+                    <h3>Alimento Kit - Kats</h3>
+                    <p>Kit Cat es un alimento para gatos elaborado con ingredientes naturales, rico en proteínas y sin
+                        conservantes artificiales.</p>
+                    <p class="Precio">$55000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="9" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos10.png" alt="">
+                <div class="product-txt">
+                    <h3>North Paw</h3>
+                    <p>North Paw es un alimento premium para gatos, formulado con ingredientes naturales y alto
+                        contenido proteico..</p>
+                    <p class="Precio">$50000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="10" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos11.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Kitchen</h3>
+                    <p>
+                        Purina Kitchen es un alimento para gatos elaborado con ingredientes naturales y frescos,
+                        ofreciendo una nutrición equilibrada. </p>
+                    <p class="Precio">$39000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="11" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/gatos/gatos12.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Kat Show</h3>
+                    <p>Purina Katshow es un alimento premium para gatos que ofrece una fórmula equilibrada y nutritiva,
+                        diseñada para promover la salud y el bienestar general de tu mascota</p>
+                    <p class="Precio">$30000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="12" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-2" data id="load-more2" onclick="sound.play()">Cargas Más </div>
+
+
+        <h2>Seccion Aves</h2>
+        <div class="box-container3" id="lista-3">
+            <div class="box">
+                <img src="images/Aves/aves1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Casas de madera</h3>
+                    <p>Las casas de madera para pájaros son refugios pequeños y acogedores, diseñados para ofrecer
+                        protección y un lugar seguro para anidar. </p>
+                    <p class="Precio">$75000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="1" onclick="sound.play()">Agregar al Carrito</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves2.png" alt="">
+                <div class="product-txt">
+                    <h3>Bebedero Para Ave Am</h3>
+                    <p>El bebedero para aves AM es un dispositivo diseñado para proporcionar agua limpia y fresca a las
+                        aves. Fabricado con materiales duraderos.</p>
+                    <p class="Precio">$95000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="2" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves3.png" alt="">
+                <div class="product-txt">
+                    <h3>Material Para Nido De Pájaros </h3>
+                    <p>Ideal para la construcción del nido, elaborado con fibras naturales, dispensador autónomo que se
+                        cuelga en el interior de la jaula.</p>
+                    <p class="Precio">$55000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="3" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves4.png" alt="">
+                <div class="product-txt">
+                    <h3>Mixtura Perico - Canarios</h3>
+                    <p>Las mixturas para alimentos de aves son combinaciones balanceadas de semillas, granos, y frutas
+                        secas, formuladas para cubrir las necesidades nutricionales de distintas especies de aves.</p>
+                    <p class="Precio">$45000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="4" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves5.png" alt="">
+                <div class="product-txt">
+                    <h3>Chirpy</h3>
+                    <p>Los alimentos Chirpy para aves son una mezcla nutritiva de semillas y granos, formulada para
+                        mantener la salud y vitalidad de las aves.</p>
+                    <p class="Precio">$83000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="5" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves6.png" alt="">
+                <div class="product-txt">
+                    <h3>Nature Plan</h3>
+                    <p>Nature Plan para aves son una mezcla natural de semillas y cereales, diseñada para proporcionar
+                        una nutrición equilibrada.</p>
+                    <p class="Precio">$155000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="6" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves7.png" alt="">
+                <div class="product-txt">
+                    <h3>Kaytee Forty </h3>
+                    <p>Nutre a una mascota saludable con Kaytee Forti-Diet Pro Health Conure & Lovebird Food,
+                        especialmente hecho con el apoyo esencial que tu ave necesita para prosperar. </p>
+                    <p class="Precio">$81000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="7" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves8.png" alt="">
+                <div class="product-txt">
+                    <h3>Serynus </h3>
+                    <p>Alimento indicado para aves silvestres de la familia de los fringílidos (Jilgueros, verderones,
+                        pardillos, pinzones...).</p>
+                    <p class="Precio">$95000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="8" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves9.png" alt="">
+                <div class="product-txt">
+                    <h3>Polo Standard Pigeon</h3>
+                    <p>El alimento Polo Standard Pigeon es una mezcla especialmente formulada para palomas, que combina
+                        granos y nutrientes esenciales. </p>
+                    <p class="Precio">$55000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="9" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves10.png" alt="">
+                <div class="product-txt">
+                    <h3>Poultry Feed </h3>
+                    <p>Poultry Feed es un alimento completo y balanceado para aves de corral, formulado con granos y
+                        nutrientes esenciales. Está diseñado para promover el crecimiento,.</p>
+                    <p class="Precio">$85000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="10" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves11.png" alt="">
+                <div class="product-txt">
+                    <h3>RIO-pinzones para pájaros</h3>
+                    <p>
+                        IO-pinzones es un alimento especializado para pinzones, compuesto por una mezcla equilibrada de
+                        semillas y nutrientes.</p>
+                    <p class="Precio">$93000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="11" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aves/aves12.png" alt="">
+                <div class="product-txt">
+                    <h3>Arenilla Calcificante</h3>
+                    <p>La Arenilla Calcificante para pájaros es un suplemento natural que facilita la digestión y
+                        fortalece los huesos de las aves.</p>
+                    <p class="Precio">$10000</p>
+                    <a href="#" class="agregar-carrito btn-3" data id="12" onclick="sound.play()">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-2" data id="load-more3" onclick="sound.play()">Cargas Más</div>
+    </main>
+
+    <section class="testimonio container" id="testimonios">
+        <span>Testimonios</span>
+        <h2>¿Qué Opinan nuestros clientes?</h2>
+        <div class="testimonio-content">
+            <div class="testimonio-1">
+
+                <p>
+                    "Mi experiencia comprando juguetes para mi perro en la veterinaria ha sido excelente. Lo que más me
+                    gusta es la variedad que tienen, desde juguetes para morder hasta pelotas interactivas. Además, los
+                    productos son de muy buena calidad y duran bastante tiempo, incluso con un perro tan inquieto como
+                    el mío. El personal de la tienda siempre me asesora sobre cuál es el mejor juguete según la edad y
+                    el tamaño de mi mascota, lo cual es muy útil. Sin duda, seguiré comprando aquí."
+
+                </p>
+                <img src="images/sofia.png" alt="">
+                <h4>Maria Sofia</h4>
+
+            </div>
+            <div class="testimonio-1">
+                <p>
+                    "Siempre compro los juguetes de mis gatos en esta veterinaria, y estoy muy satisfecho con la
+                    experiencia. Los juguetes no solo son seguros y duraderos, sino que también hay opciones para
+                    diferentes edades. Me encanta que la tienda tenga descripciones detalladas sobre cómo cada juguete
+                    estimula la mente y el cuerpo de mis gatos. Mis dos felinos se divierten mucho y se mantienen
+                    activos, lo que me da tranquilidad. Además, el proceso de compra es rápido y fácil, especialmente
+                    con el carrito en línea. ¡Recomiendo esta tienda a todos los dueños de mascotas!"
+                </p>
+                <img src="images/Alex.png" alt="">
+                <h4>Alejandro Amador</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="Contactos">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Direccion</h3>
+                <ul>
+                    <li><a href="#">Oficina</a></li>
+                    <li><a href="#">Calle 38 # 1951</a></li>
+                    <li><a href="#">Barrio Bizerta</a></li>
+                    <li><a href="#">Palmira Valle </a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Telefonos</h3>
+                <ul>
+                    <li><a href="#">Celular</a></li>
+                    <li><a href="#">3234567890</a></li>
+                    <li><a href="#">WhastApp</a></li>
+                    <li><a href="#">3023456723</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>REdes Sociales</h3>
+                <ul>
+                    <li><a href="#">@LikelinAlex</a></li>
+                    <li><a href="#">@Alexalber</a></li>
+                    <li><a href="#">@AlexFacebook</a></li>
+                    <li><a href="#">@alexInstagram</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+    <div class="go-to-container">
+        <div class="go-to-button">
+            <button>
+                <i>
+                    <a>Inicio</a>
+                </i>
+            </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
